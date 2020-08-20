@@ -24,11 +24,11 @@ private PurchaseOrderActions purchaseOrderActions ;
         purchaseOrderActions.enterSearchKey(searchKey);
         purchaseOrderActions.clickSearchButton();
     }
-
-    @When("add items in Add to Cart to proceed")
-    public void add_items_in_add_to_cart_to_proceed(List<String>  items) {
+    @When("add first two items in Add to Cart to proceed")
+    public void add_first_two_items_in_add_to_cart_to_proceed() {
         purchaseOrderActions. selectItemsAddToCart();
     }
+
     @When("click proceed to checkout on Shopping-cart Summary page")
     public void click_proceed_to_checkout_on_shopping_cart_summary_page() {
         purchaseOrderActions.clickBottomPageClickToProceed();
